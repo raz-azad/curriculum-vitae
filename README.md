@@ -10,19 +10,31 @@ To install LaTeX with the necessary packages on Debian 11, run the following com
 ```bash
 sudo apt install texlive-latex-extra texlive-fonts-recommended texlive-latex-recommended texlive-fonts-extra texlive-bibtex-extra -y
 ```
+Here’s the updated markdown file including the `Makefile` instructions to generate a PDF with a dynamic filename based on the current date and time:
+
+```markdown
+# Installing LaTeX on Debian 11 and Building PDF
+
+## Installing LaTeX
+
+To install LaTeX with the necessary packages on Debian 11, run the following command:
+
+```bash
+sudo apt install texlive-latex-extra texlive-fonts-recommended texlive-latex-recommended texlive-fonts-extra texlive-bibtex-extra -y
+```
 
 ## Steps to Generate the PDF
-1. Make the script executable by running:
 
-   ```bash
-   chmod +x build_pdf.sh
-   ```
+### Run the `Makefile`
 
-2. Now you can execute the script with:
+After creating the `Makefile`, use the following command to build the PDF with a dynamically generated filename:
 
-   ```bash
-   ./build_pdf.sh
-   ```
-
-This will create the `build` directory (if it doesn't already exist) and run `pdflatex` to compile `cv.tex` into a PDF, saving the output in the `build` folder.
+```bash
+make
 ```
+
+This will compile the LaTeX file `cv.tex`, and the output will be saved as `cv_YYYY-MM-DD_HH-MM-SS.pdf` inside the `build` directory.
+
+```
+
+This markdown provides clear instructions to install LaTeX, create the necessary directory, add the `Makefile`, and run the `make` command to generate a PDF with a timestamped filename.

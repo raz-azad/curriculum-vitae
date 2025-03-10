@@ -1,18 +1,3 @@
-Here is the entire markdown file ready to copy:
-
-```markdown
-# Installing LaTeX on Debian 11 and Building PDF
-
-## Installing LaTeX
-
-To install LaTeX with the necessary packages on Debian 11, run the following command:
-
-```bash
-sudo apt install texlive-latex-extra texlive-fonts-recommended texlive-latex-recommended texlive-fonts-extra texlive-bibtex-extra -y
-```
-Here’s the updated markdown file including the `Makefile` instructions to generate a PDF with a dynamic filename based on the current date and time:
-
-```markdown
 # Installing LaTeX on Debian 11 and Building PDF
 
 ## Installing LaTeX
